@@ -8,7 +8,7 @@
 nav{
     width: 100%;
     margin: 0px auto 40px auto;
-    background-color: white;
+    background-color: rgb(231, 178, 178);
     position: sticky;
     top: 0px;
 }
@@ -32,38 +32,114 @@ nav ul::after{
 
 nav a{
     display: block; /*Toute la surface sera cliquable*/
-    text-decoration: none;
-    color: black;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(111, 47, 24);
     border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
     padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
 }
 
 nav a:hover{
-    color: rgb(255, 0, 242);
-    border-bottom: 2px solid rgb(205, 7, 40);
+    color: rgb(220, 102, 196);
+    border-bottom: 2px solid rosybrown;
 }
 
 .conteneur{
   margin: 0px 20px;
-  height: 1500px;
+  height: 1000px;
 }
 
-.contentBIS {
-    display: flex;
-    flex-direction: row;
-    background-color: violet;
-    align-items: center;
-    justify-content: space-between;
+.imageSpace {
+    display:flex;
+    justify-content: space-around;
     
+    
+}
 
-  }
-
-  .content {
-    display: flex;
+.imageSpace2 {
+    display:flex;
     flex-direction: column;
-    background-color: gray;
-    width: 300px;
-    align-items: center;
-    border-radius: 30px;
+    width: 25%;
+    
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* ça c'est pour l'icône du titre qui bouge en haut à gauche (votre gauche hein)*/
+#pulse {
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      font-variation-settings: 'wght' 100;
+    }
+    50% {
+      font-variation-settings: 'wght' 700;
+    }
+    100% {
+      font-variation-settings: 'wght' 100;
+    }
+  }
+
+  body {
+
+    margin: 8px 12px;
+  }
+
+  h1 , li {
+    color: rgb(57, 14, 14);
+  }
+
+  /* pour la police "ASSASIN DE LA POLICEEEE🗣" */
+  .libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+/* J'ai besoin que vous respectiez mes boundaries, c'est essentiel pour bien communiquer */
+  hr {
+    color: brown;
+    width: 100%;
+  }
+
+  h3 {
+    height: 40px;
+  }
+
+  /* Pour la FLASH INFO .NB: que la fonction marquee ne sera bientôt plus dispo sur la quasi totalité des navigateurs
+  Si ça marche pas c'est pas de ma faute ! */
+
+  marquee {
+
+     background-color: plum;
+     color: darkmagenta;
+     font-family: "Libre Caslon Text", serif;
+     font-weight: 400;
+     font-style: italic;
+
 
   }
+
+  footer
