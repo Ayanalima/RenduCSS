@@ -7,8 +7,8 @@
 
 nav{
     width: 100%;
-    margin: 0px auto 40px auto;
-    background-color: rgb(231, 178, 178);
+    margin: 0px 0px;
+    background-color: rgb(224, 171, 179);
     position: sticky;
     top: 0px;
 }
@@ -41,7 +41,7 @@ nav a{
 }
 
 nav a:hover{
-    color: rgb(220, 102, 196);
+    color: rgb(194, 121, 180);
     border-bottom: 2px solid rosybrown;
 }
 
@@ -73,9 +73,11 @@ nav a:hover{
   'opsz' 24
 }
 
+
 /* ça c'est pour l'icône du titre qui bouge en haut à gauche (votre gauche hein)*/
 #pulse {
     animation: pulse 3s infinite;
+    font-size: xxx-large;
   }
   
   @keyframes pulse {
@@ -99,6 +101,32 @@ nav a:hover{
     color: rgb(57, 14, 14);
   }
 
+  .bloc-texte {
+    background-color: rgb(208, 166, 129);
+    border-radius: 70px;
+    margin: 8px ;
+    height: 200px;
+    }
+
+    .bloc-texte2 {
+      background-color: rgb(208, 166, 129);
+      border-radius: 70px;
+      margin: 8px ;
+      height: 250px;
+      }
+
+  h1 { 
+    background-color: rgb(194, 129, 129);
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+  }
+
+  body{ 
+    margin: 0px 0px;
+    background-image: url(wallpaper.jpg);
+  }
+
   /* pour la police "ASSASIN DE LA POLICEEEE🗣" */
   .libre-caslon-text-regular {
     font-family: "Libre Caslon Text", serif;
@@ -119,13 +147,26 @@ nav a:hover{
   }
   
 /* J'ai besoin que vous respectiez mes boundaries, c'est essentiel pour bien communiquer */
-  hr {
-    color: brown;
-    width: 100%;
-  }
+ hr {
+  color: rgb(57, 14, 14);
+  background-color: rgb(57, 14, 14) ;
+ }
 
-  h3 {
+ hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.style-four {
+  height: 1px;
+  border: 0;
+  box-shadow: inset 0 1px 1px -1px rgba(0, 0, 0, 0.164);
+}
+
+  h3, p {
     height: 40px;
+    margin: 8px 12px;
   }
 
   /* Pour la FLASH INFO .NB: que la fonction marquee ne sera bientôt plus dispo sur la quasi totalité des navigateurs
@@ -133,8 +174,7 @@ nav a:hover{
 
   marquee {
 
-     background-color: plum;
-     color: darkmagenta;
+     color: rgb(81, 42, 81);
      font-family: "Libre Caslon Text", serif;
      font-weight: 400;
      font-style: italic;
@@ -142,4 +182,51 @@ nav a:hover{
 
   }
 
-  footer
+  footer {
+    background-image:url(sleepyCat.jpg);
+  }
+
+ 
+
+  h1 h2 h3 h4 h5 h6 {
+    margin: 8px 12px ;
+  }
+
+  #pawtrack1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -290px;
+    z-index: -1;
+ }
+
+
+
+  #catdebout {
+    width: 300px;
+    
+  }
+
+  #catdebout2 {
+    width: 400px;
+    
+  }
+
+  #catdebout3 {
+    width: 300px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 10px;
+    right: -473px;
+    z-index: -1;
+  }
+
+
+  #conclu {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  ]
